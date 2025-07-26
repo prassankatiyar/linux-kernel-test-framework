@@ -1,0 +1,14 @@
+# Compiled kernel files
+*.o
+*.ko
+*.mod
+*.mod.c
+*.symvers
+Module.symvers
+modules.order
+
+# Compiled user-space files
+test_suite
+
+# System files
+.DS_Store
