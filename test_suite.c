@@ -1,5 +1,4 @@
-// test_suite.c
-// A user-space program to test the mydevice driver.
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,15 +8,14 @@
 #include <sys/ioctl.h>  // For ioctl()
 #include <errno.h>      // For errno
 
-// Include the shared header to ensure API consistency.
+
 #include "mydevice.h"
 
 #define DEVICE_PATH "/dev/mydevice"
 #define TEST_STRING "Hello, Kernel!"
-// This should match the buffer size in your kernel module
+
 #define KERNEL_BUFFER_SIZE 256 
 
-// --- Helper function for clear reporting ---
 void run_test(const char* test_name, int condition) {
     printf("%-50s ", test_name);
     if (condition) {
